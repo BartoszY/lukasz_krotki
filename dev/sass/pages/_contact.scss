@@ -1,0 +1,16 @@
+@use '../base' as *;
+
+.contact {
+  padding: 80px 0;
+  
+  p {
+    margin: 40px 0;
+    font-size: 22px;
+    line-height: 1.5;
+
+    @include lg {
+      margin: 58px 0;
+      font-size: 40px;
+    }
+  }
+}

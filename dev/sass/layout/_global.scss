@@ -1,0 +1,173 @@
+@use '../base' as *;
+
+html {
+  scroll-behavior: smooth;
+}
+
+section, article {
+  scroll-margin-top: 48px;
+}
+
+body {
+  background: $color-bg;
+  
+  @include lg {
+    cursor: none !important;
+  }
+}
+
+@include lg {
+  a {
+    cursor: none !important;
+
+    &:hover {
+      cursor: none !important;
+    }
+  }
+}
+
+.main {
+  flex: 1;
+  padding-top: $header-height;
+  min-height: calc(100vh - $header-height - 120px);
+
+  @include to-lg {
+    padding-top: $header-mobile-height;
+  }
+}
+
+
+.custom-cursor {
+  width: 24px;
+  height: 24px;
+  background: black;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 999999;
+
+  &--hover {
+    background: #fff;
+    mix-blend-mode: difference;
+  }
+
+  @include to-lg {
+    display: none;
+  }
+}
+
+.hide-on-mobile {
+  @include to-lg {
+    display: none !important;
+  }
+}
+
+.hide-on-desktop {
+  @include lg {
+    display: none !important;
+  }
+}
+
+
+.container {
+  width: $container-size;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  @include md {
+    padding: 0 24px;
+  }
+
+  @include lg {
+    padding: 0 48px;
+  }
+
+  &--no-padding {
+    padding: 0;
+  }
+}
+
+
+
+
+
+
+.portfolio-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+  @include lg {
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+  }
+
+  .portfolio-teaser__image img {
+    aspect-ratio: 3 / 2;
+  }
+}
+
+
+
+.text-logo {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 22px;
+
+  @include lg {
+    font-size: 28px;
+  }
+
+  &--footer {
+    font-size: 14px;
+
+    @include lg {
+      font-size: 22px;
+    }
+  }
+}
+
+
+.cn-position-bottom:not(.cookie-notice-hidden) {
+  .cookie-notice-container {
+    display: flex !important;
+  }
+}
+
+.cookie-notice-container {
+  border-top: 1px solid $color-text;
+  justify-content: space-between;
+  align-items: center;
+
+  @include lg {
+    padding: 24px 48px !important;
+  }
+}
+
+.cn-text-container {
+  font-size: 14px !important;
+  justify-self: flex-start !important;
+  margin: 0 !important;
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+.cn-button {
+  background: none !important;
+  color: $color-text !important;
+  font-size: 14px !important;
+  text-transform: uppercase !important;
+
+  &:hover {
+    text-decoration: underline !important;
+  }
+}

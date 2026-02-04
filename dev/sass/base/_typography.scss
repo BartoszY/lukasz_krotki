@@ -1,0 +1,284 @@
+@use 'variables' as *;
+
+body {
+  font-family: $font-primary;
+  color: $color-text;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+
+  @include lg {
+    font-size: 22px;
+  }
+}
+
+strong, b {
+  font-weight: 400;
+}
+
+a {
+  word-wrap: break-word;
+}
+
+p {
+  margin: 20px 0;
+  color: $color-text-light;
+
+  strong, b {
+    font-weight: 400;
+    color: $color-text;
+  }
+
+  &:first-of-type {
+    margin-top: 0 !important;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0 !important;
+  }
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+.color-text-muted {
+  color: $color-text-light;
+}
+
+body:not(.woocommerce-page) {
+  article {
+    h1, h2, h3, h4, h5 {
+      font-weight: 700;
+      line-height: 1.2;
+    }
+  
+    h1 {
+      margin: 36px 0 24px;
+      font-size: 32px;
+
+      @include lg {
+        font-size: 48px;
+      }
+    }
+  
+    h2 {
+      margin: 24px 0 16px;
+      font-size: 28px;
+
+      @include lg {
+        font-size: 40px;
+      }
+    }
+  
+    h3 {
+      margin: 24px 0 16px;
+      font-size: 20px;
+
+      @include lg {
+        font-size: 28px;
+      }
+    }
+  
+    h4 {
+      margin: 24px 0;
+      font-size: 18px;
+
+      @include lg {
+        font-size: 24px;
+      }
+    }
+  
+    a {
+      color: $color-primary;
+      text-decoration: underline;
+  
+      strong {
+        font-size: 24px;
+        font-weight: 700;
+      }
+  
+      &:hover {
+        opacity: .75;
+      }
+    }
+  
+    ol, ul:not(.products) {
+      padding-left: 20px;
+    }
+
+    ol, ul {
+      margin: 16px 0;
+
+      li {
+        color: $color-text-light;
+      }
+    }
+  
+    ul:not(.products) {
+      list-style: disc;
+    }
+
+    blockquote {
+      margin: 24px 0;
+      padding-left: 32px;
+      border-left: 2px solid $color-primary;
+      font-style: italic;
+    }
+
+    .products {
+      a {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  
+    table {
+      margin: 24px 0;
+      width: 100%;
+      border-radius: 0 !important;
+      font-size: 14px;
+      text-align: left;
+
+      td, th {
+        padding: 16px;
+        border: 1px solid #EBEBEB;
+
+        @include lg {
+          padding: 16px 24px;
+        }
+      }
+
+      thead {
+        th {
+          font-weight: 700;
+
+          &:first-child {
+            font-weight: 700;
+            background: rgba(40,199,170,.1);
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          td {
+            &:first-child {
+              font-weight: 600;
+              background: rgba(40,199,170,.1);
+            }
+
+            strong {
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+h2.wp-block-heading {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 105%;
+  letter-spacing: -0.52px; 
+}
+
+
+h3.wp-block-heading {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 105%;
+  letter-spacing: -0.36px; 
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// .space-between {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+
+//   @include small {
+//     display: block;
+//   }
+// }
+
+
+
+.color-primary {
+  color: $color-primary;
+}
+.color-secondary {
+  color: $color-primary;
+}
+.color-white {
+  color: #fff;
+}
+.color-text {
+  color: $color-text;
+}
+
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-bold {
+  font-weight: 700 !important;
+}
+
+.text-small {
+  p {
+    font-size: 14px;
+  }
+}
+
+
+hr {
+  margin: 20px 0;
+  border: 0;
+  height: 1px;
+  background: #E9E9E9;
+}
+
+.mobile-br {
+  @include lg {
+    display: none;
+  }
+}
+
+// br.mobile {
+//   display: none;
+  
+//   @include small {
+//     display: inherit;
+//   }
+// }
+
+// br.desktop {
+//   @include small {
+//     display: none;
+//   }
+// }
+
+
+.text-small {
+  font-size: 14px;
+  color: $color-text-light;
+}
+
+.text-large {
+  font-size: 20px;
+  color: $color-text-light;
+}

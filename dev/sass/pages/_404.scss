@@ -1,0 +1,13 @@
+@use '../base' as *;
+
+.main > .error404 {
+  padding: 64px 0;
+
+  @include lg {
+    padding: 100px 0;
+  }
+
+  .button {
+    margin-top: 32px;
+  }
+}

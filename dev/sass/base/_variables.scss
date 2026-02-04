@@ -1,0 +1,80 @@
+
+
+@font-face {
+	font-family: 'EduFavorit';
+	src: url('../fonts/EduFavorit-Book.woff') format('woff'),
+			 url('../fonts/EduFavorit-Book.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+@font-face {
+	font-family: 'ABCFavorit';
+  src: url('../fonts/ABCFavorit-Book-Trial.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+/* Colors */
+$color-primary: #1C1A1A;
+$color-bg: #FFFBF1;
+$color-text: #1C1A1A;
+$color-text-light: #272727;
+$color-border: #1C1A1A;
+
+$container-size: 1920px;
+$container-medium-size: 1024px;
+$header-height: 109px;
+$header-mobile-height: 87px;
+
+$font-primary: "EduFavorit", sans-serif;
+
+@mixin sm() {
+  @media only screen and (min-width: 576px) {
+    @content;
+  }
+}
+@mixin to-sm() {
+  @media only screen and (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin to-md() {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+@mixin md() {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin lg() {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin to-lg() {
+  @media only screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin xl() {
+  @media only screen and (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin xxl() {
+  @media only screen and (min-width: 1480px) {
+    @content;
+  }
+}

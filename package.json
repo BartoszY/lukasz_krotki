@@ -1,0 +1,57 @@
+{
+  "name": "ytheme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": " "
+  },
+  "author": "",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "dependencies": {
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@googlemaps/js-api-loader": "^1.15.1",
+    "@googlemaps/markerclusterer": "^2.0.15",
+    "@splidejs/splide": "^4.1.4",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "@waaark/luge": "^0.6.17-beta.2",
+    "aos": "^2.3.4",
+    "autoprefixer": "^10.4.1",
+    "babel": "^6.23.0",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.27.7",
+    "cssnano": "^5.0.14",
+    "del": "^6.0.0",
+    "google-maps": "^4.3.3",
+    "gsap": "^3.11.3",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify": "^3.0.2",
+    "nouislider": "^15.7.0",
+    "postcss": "^8.4.5",
+    "sass": "^1.45.1",
+    "tiny-slider": "^2.9.4",
+    "tns": "^0.2.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  }
+}

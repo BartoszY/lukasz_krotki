@@ -1,0 +1,70 @@
+@use '../base' as *;
+
+
+.footer {
+  padding: 24px 0 48px;
+  border-top: 1px solid $color-border;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  @include lg {
+    padding: 32px 0 48px;
+  }
+
+  .container {
+    @include lg {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 0;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 32px;
+
+    img {
+      height: 20px;
+      width: auto;
+    }
+
+    @include to-lg {
+      display: none;
+    }
+  }
+
+  &__widgets {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+
+    @include sm {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .widget {
+    .textwidget {
+      p {
+        margin: 0 0 8px !important;
+      }
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      
+      .sub-menu {
+        display: none;
+      }
+
+      .menu-item {
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

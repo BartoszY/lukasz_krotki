@@ -1,0 +1,22 @@
+{
+    "key": "ui_options_page_65c5f98390f3c",
+    "title": "Opcje szablonu",
+    "active": true,
+    "menu_order": 0,
+    "page_title": "Opcje szablonu",
+    "menu_slug": "opcje-szablonu",
+    "parent_slug": "none",
+    "advanced_configuration": 1,
+    "icon_url": "",
+    "menu_title": "",
+    "position": "",
+    "redirect": 0,
+    "description": "",
+    "update_button": "Aktualizuj",
+    "updated_message": "Ustawienia zostały zaktualizowane",
+    "capability": "edit_posts",
+    "data_storage": "options",
+    "post_id": "",
+    "autoload": 0,
+    "modified": 1707473298
+}

@@ -1,0 +1,7 @@
+@use '../base' as *;
+
+.page-content {
+  &__text {
+    width: min(936px, 100%);
+  }
+}
