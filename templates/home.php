@@ -19,7 +19,7 @@ get_header();
       <div class="portfolio-teaser <?= $item['cols'] === 'two' ? 'portfolio-teaser--two-column' : '' ?>">
         <?php if ($img || has_post_thumbnail($item['post'])) : ?>
         <a href="<?php the_permalink($item['post']); ?>" class="portfolio-teaser__image">
-          <?php echo wp_get_attachment_image( $img ? $img : get_post_thumbnail_id($item['post']), 'hd', false ); ?>
+          <img src="<?= $img ? $img['url'] : get_the_post_thumbnail_url($item['post']) ?>" alt="<?= $img ? $img['alt'] : get_the_title($item['post']) ?>">
         </a>
         <?php endif; ?>
 

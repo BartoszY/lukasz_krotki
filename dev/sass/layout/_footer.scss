@@ -41,6 +41,10 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
     }
+
+    @include to-lg {
+      margin-top: 38px;
+    }
   }
 
   .widget {

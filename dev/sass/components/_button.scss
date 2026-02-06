@@ -25,7 +25,14 @@
 
   &--left {
     &::before {
-      content: '';
+      content: '←';
+      transition: .3s;
+    }
+
+    &:hover {
+      &::before {
+        transform: translateX(-4px);
+      }
     }
   }
 
@@ -35,17 +42,37 @@
       display: block;
       transition: .3s;
     }
+
+    &:hover {
+      &::after {
+        transform: translateX(4px);
+      }
+    }
   }
 
   &--top {
     &::before {
       content: '↑';
+      transition: .3s;
+    }
+
+    &:hover {
+      &::before {
+        transform: translateY(-4px);
+      }
     }
   }
 
   &--down {
     &::before {
       content: '↓';
+      transition: .3s;
+    }
+
+    &:hover {
+      &::before {
+        transform: translateY(4px);
+      }
     }
   }
 }

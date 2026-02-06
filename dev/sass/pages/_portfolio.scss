@@ -9,18 +9,29 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .portfolio-title {
+  margin: 0;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 14px;
   font-weight: 400;
+
+  @include lg {
+    font-size: 22px;
+  }
 }
 
 .show-portfolio-description {
   &::before {
-    transform: rotate(180deg) translateY(2px);
+    transform: rotate(180deg) translateY(3px);
+  }
+
+  &:hover {
+    &::before {
+      transform: rotate(180deg) translateY(-2px);
+    }
   }
 
   &.active {
@@ -33,6 +44,7 @@
 
 
 .portfolio-description {
+  min-width: 49%;
   width: min(640px, 100%);
   overflow: hidden;
   max-height: 0;
@@ -41,7 +53,11 @@
   &.active {
     max-height: 100%;
     opacity: 1;
-    margin-bottom: 80px;
+    margin: 20px 0 80px;
+
+    @include lg {
+      margin: 30px 0 120px;
+    }
   }
 
   p {
@@ -86,6 +102,11 @@
           line-height: 1.25;
         }
       }
+    }
+
+    img, video {
+      display: block;
+      width: 100%;
     }
 
     &--video {

@@ -25,7 +25,7 @@
         <div class="portfolio-grid__item portfolio-grid__item--<?= $item['type'] ?> <?= $item['cols'] === 'two' ? 'portfolio-grid__item--two-column' : '' ?>">
           <?php if ($item['type'] === 'image') : ?>
 
-            <img src="<?= $item['image']['sizes']['hd'] ?>" alt="<?= $item['image']['alt'] ?>">
+            <img src="<?= $item['image']['url'] ?>" alt="<?= $item['image']['alt'] ?>">
 
           <?php elseif ($item['type'] === 'video') : ?>
 

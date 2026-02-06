@@ -3,7 +3,7 @@
 <footer class="footer">
   <div class="container">
     <div>
-      <a href="<?= home_url() ?>" class="text-logo text-logo--footer">
+      <a href="<?= home_url() ?>" class="text-logo">
         <?php bloginfo('name'); ?>
       </a>
     </div>

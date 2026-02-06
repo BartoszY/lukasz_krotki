@@ -9,7 +9,7 @@
       <div class="portfolio-teaser">
         <?php if (has_post_thumbnail()) : ?>
         <a href="<?php the_permalink(); ?>" class="portfolio-teaser__image">
-          <?php echo wp_get_attachment_image( get_post_thumbnail_id(), 'medium', false ); ?>
+          <img src="<?= get_the_post_thumbnail_url() ?>" alt="<?= get_the_title() ?>">
         </a>
         <?php endif; ?>
 
